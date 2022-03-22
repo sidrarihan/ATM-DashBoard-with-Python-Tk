@@ -1,16 +1,21 @@
 from tkinter import *
 
+
 root =Tk()
 root.title("Welcome to the main page")
 root.geometry("350x250")
-root.resizable(width=True, height=True)
+root.resizable(width=False, height=False)
+#defining calls for the button pages.
 def myClick():
-   
     pass
+def deposit():
+    import deposit
 
+def mini_statement():
+    import mini_statement
 # defining all buttons
-cash_deposit = Button(root, text="Deposit Cash", command=myClick)
-mini_statement = Button(root, text="Mini Statement", command=myClick)
+cash_deposit = Button(root, text="Deposit Cash", command=deposit)
+mini_statement = Button(root, text="Mini Statement", command=mini_statement)
 balance_inquiry = Button(root, text="Balance Inquiry", command=myClick)
 cash_withdrawal = Button(root, text="Cash Withdrawal", command=myClick)
 transfer_funds = Button(root, text="Transfer Funds", command=myClick)
