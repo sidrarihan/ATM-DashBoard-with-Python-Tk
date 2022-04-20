@@ -13,15 +13,28 @@ def deposit():
 
 def mini_statement():
     import mini_statement
+# def balance_inquiry():
+#     import balance_inquiry
+def cash_withdrawal():
+    import cash_withdrawal
+
+def transfer_funds():
+    import Transfer_funds
+def fast_cash():
+    import Fast_Cash
+def update_contact():
+    import Update_contacts
+# def change_pin():
+#     import change_pin
 # defining all buttons
 cash_deposit = Button(root, text="Deposit Cash", command=deposit)
 mini_statement = Button(root, text="Mini Statement", command=mini_statement)
 balance_inquiry = Button(root, text="Balance Inquiry", command=myClick)
-cash_withdrawal = Button(root, text="Cash Withdrawal", command=myClick)
-transfer_funds = Button(root, text="Transfer Funds", command=myClick)
+cash_withdrawal = Button(root, text="Cash Withdrawal", command=cash_withdrawal)
+transfer_funds = Button(root, text="Transfer Funds", command=transfer_funds)
 change_pin = Button(root, text="Change PIN", command=myClick)
-fast_cash = Button(root, text="Fast Cash", command=myClick)
-update_contact = Button(root, text="Update Contact", command=myClick)
+fast_cash = Button(root, text="Fast Cash", command=fast_cash)
+update_contact = Button(root, text="Update Contact", command=update_contact)
 
 #Arranging all buttons in a grid.
 cash_deposit.grid(row=0, column=0, padx=10,pady=10)
